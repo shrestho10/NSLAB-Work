@@ -1,0 +1,17 @@
+
+import re
+
+txt2 = input()
+d={}
+c=0
+txt=re.findall("\w+",txt2)
+
+for i in range(0,len(txt[0])):
+    if i<len(txt[0])-1:
+
+        if txt[0][i]==txt[0][i+1] and txt[0][i]!='_':
+            c = 1
+            print(txt[0][i])
+            break
+if c==0:
+    print('-1')
