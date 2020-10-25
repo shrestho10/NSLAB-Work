@@ -1,0 +1,17 @@
+import re
+n=int(input())
+for i in range(0,n):
+    j1=input()
+    finder = re.findall(r'[+-]?[0-9]*\.\d+', j1)
+    if len(finder)==0:
+        print('False')
+    elif finder[0]==j1:
+        print('True')
+    else:
+        print('False')
+
+
+
+
+
+
